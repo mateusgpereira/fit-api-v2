@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: fit-api-v2
+  data:
+    mongodb:
+      uri: mongodb://root:example@localhost:27017/fit_v2?authSource=admin

@@ -2,7 +2,7 @@ package io.tora.fitapiv2.controllers.impl;
 
 import io.tora.fitapiv2.controllers.IExerciseController;
 import io.tora.fitapiv2.dtos.ExerciseRequestDTO;
-import io.tora.fitapiv2.entities.Exercise;
+import io.tora.fitapiv2.dtos.ExerciseResponseDTO;
 import io.tora.fitapiv2.services.IExerciseService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -21,13 +21,13 @@ public class ExerciseController implements IExerciseController {
 
   @Override
   @PostMapping
-  public Exercise create(@RequestBody ExerciseRequestDTO data) {
+  public ExerciseResponseDTO create(@RequestBody ExerciseRequestDTO data) {
     return this.service.create(data);
   }
 
   @Override
   @GetMapping
-  public List<Exercise> list() {
+  public List<ExerciseResponseDTO> list() {
     return this.service.list();
   }
 

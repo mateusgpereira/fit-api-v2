@@ -1,12 +1,12 @@
 package io.tora.fitapiv2.controllers;
 
 import io.tora.fitapiv2.dtos.ExerciseRequestDTO;
-import io.tora.fitapiv2.entities.Exercise;
+import io.tora.fitapiv2.dtos.ExerciseResponseDTO;
 import java.util.List;
 
 public interface IExerciseController {
 
-  Exercise create(ExerciseRequestDTO data);
+  ExerciseResponseDTO create(ExerciseRequestDTO data);
 
-  List<Exercise> list();
+  List<ExerciseResponseDTO> list();
 }
